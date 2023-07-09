@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 :root {
+  --black-color: #000000;
   --document-bg-color: #141418;
   --dark-bg-color: #101b3f;
   --accent-color: #5076ff;
@@ -23,8 +24,8 @@ body {
   font-family: var(--font-family);
 }
 .container {
-  width: 25rem;
-  min-height: 40rem;
+  width: 30rem;
+  min-height: 50rem;
   background-color: var(--light-bg-color);
   margin: 0 auto;
   align-self: center;
@@ -40,4 +41,25 @@ body {
   font-size: var(--display-fs);
   text-align: center;
   font-weight: var(--header-fw);
+}
+.gameSettings__teams {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.gameSettings__heading {
+  display: block;
+  width: 100%;
+  font-size: var(--header-fs);
+  color: var(--dark-bg-color);
+  font-weight: var(--header-fw);
+  text-align: center;
+}
+.gameSettings__input {
+  border-radius: 5px;
+  border: 1px solid var(--black-color);
+  font-size: var(--default-fs);
+  padding: 0.25rem 0;
 }
