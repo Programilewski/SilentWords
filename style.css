@@ -10,9 +10,37 @@
   --default-fs: 1rem;
   --display-fs: 4rem;
   --header-fs: 2rem;
+  --header-fw: 700;
   --small-display-fs: 0.75rem;
   --font-family: "Lato", sans-serif;
 }
 body {
   font-size: 16px;
+  background-color: var(--document-bg-color);
+  color: (--light-gray-color);
+  display: flex;
+  min-height: 100lvh;
+  font-family: var(--font-family);
+}
+.container {
+  width: 25rem;
+  min-height: 40rem;
+  background-color: var(--light-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-self: center;
+  border-radius: 25px;
+}
+.header {
+  width: 100%;
+  background-color: var(--dark-bg-color);
+}
+.header__title {
+  padding: var(--default-fs);
+  color: var(--light-gray-color);
+  font-size: var(--display-fs);
+  text-align: center;
+  font-weight: var(--header-fw);
 }
