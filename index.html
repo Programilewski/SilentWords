@@ -16,11 +16,23 @@
       <article class="gameSettings">
         <form action="" class="gameSettings__form">
           <section class="gameSettings__teams">
-            <label for="" class="gameSettings__heading"
+            <label for="gameSettings__firstTeam" class="gameSettings__heading"
               >Wybierz nazwy drużyn</label
             >
-            <input type="text" class="gameSettings__input" />
-            <input type="text" class="gameSettings__input" />
+            <input
+              id="gameSettings__firstTeam"
+              name="firstTeam"
+              type="text"
+              value="Team 1"
+              class="gameSettings__input"
+            />
+            <input
+              name="secondTeam"
+              id="gameSettings__secondTeam"
+              type="text"
+              value="Team 2"
+              class="gameSettings__input"
+            />
           </section>
           <section class="gameSettings__categories">
             <label for="" class="gameSettings__heading">Kategoria</label>

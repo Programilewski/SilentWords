@@ -61,5 +61,5 @@ body {
   border-radius: 5px;
   border: 1px solid var(--black-color);
   font-size: var(--default-fs);
-  padding: 0.25rem 0;
+  padding: 0.5rem;
 }
