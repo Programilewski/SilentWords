@@ -41,7 +41,9 @@
           </section>
           <section class="gameSettings__categories">
             <label for="" class="gameSettings__heading">Kategoria</label>
-            <div class="gameSettings__leftArrow"></div>
+            <div class="gameSettings__leftArrow">
+              <span class="material-symbols-outlined"> chevron_left </span>
+            </div>
             <fieldset class="gameSettings__categoriesPicker">
               <div class="gameSettings__categoryContainer">
                 <input
@@ -137,41 +139,81 @@
                 <label for="" class="gameSettings__categoryLabel">IT</label>
               </div>
             </fieldset>
-            <div class="gameSettings__rightArrow"></div>
+            <div class="gameSettings__rightArrow">
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </div>
           </section>
           <section class="gameSettings__roundTime">
             <label for="" class="gameSettings__heading">Czas rundy</label>
-            <div class="gameSettings__leftArrow"></div>
+            <div class="gameSettings__leftArrow">
+              <span class="material-symbols-outlined"> chevron_left </span>
+            </div>
             <fieldset class="gameSettings__roundTimePicker">
-              <input
-                type="radio"
-                name=""
-                id=""
-                class="gameSettings__time"
-              /><input
-                type="radio"
-                name=""
-                id=""
-                class="gameSettings__time"
-              /><input
-                type="radio"
-                name=""
-                id=""
-                class="gameSettings__time"
-              /><input
-                type="radio"
-                name=""
-                id=""
-                class="gameSettings__time"
-              /><input type="radio" name="" id="" class="gameSettings__time" />
+              <div class="gameSettings__roundTimeContainer">
+                <p class="gameSettings__roundTimeLabel">50 s</p>
+                <input
+                  type="radio"
+                  name="time"
+                  id=""
+                  class="gameSettings__time"
+                />
+              </div>
+              <div class="gameSettings__roundTimeContainer">
+                <p class="gameSettings__roundTimeLabel">55 s</p>
+                <input
+                  type="radio"
+                  name="time"
+                  id=""
+                  class="gameSettings__time"
+                />
+              </div>
+              <div class="gameSettings__roundTimeContainer">
+                <p class="gameSettings__roundTimeLabel">60 s</p>
+                <input
+                  type="radio"
+                  name="time"
+                  id=""
+                  class="gameSettings__time"
+                />
+              </div>
+              <div class="gameSettings__roundTimeContainer">
+                <p class="gameSettings__roundTimeLabel">65 s</p>
+                <input
+                  type="radio"
+                  name="time"
+                  id=""
+                  class="gameSettings__time"
+                />
+              </div>
+              <div class="gameSettings__roundTimeContainer">
+                <p class="gameSettings__roundTimeLabel">70 s</p>
+                <input
+                  type="radio"
+                  name="time"
+                  id=""
+                  class="gameSettings__time"
+                />
+              </div>
             </fieldset>
-            <div class="gameSettings__rightArrow"></div>
+            <div class="gameSettings__rightArrow">
+              <span class="material-symbols-outlined"> chevron_right </span>
+            </div>
           </section>
           <section class="gameSettings__roundQuantityPicker">
             <label for="" class="gameSettings__heading">Ilość rund</label>
-            <div class="gameSettings__lessRounds">-</div>
+            <button
+              id="gameSettings__lessRounds"
+              class="gameSettings__roundQuantityBtn"
+            >
+              -
+            </button>
             <div class="gameSettings__roundQantity">3</div>
-            <div class="gameSettings__moreRounds">+</div>
+            <button
+              id="gameSettings__moreRounds"
+              class="gameSettings__roundQuantityBtn"
+            >
+              +
+            </button>
           </section>
           <button type="submit" class="gameSettings__start">Start</button>
         </form>
